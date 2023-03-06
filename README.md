@@ -1,6 +1,6 @@
 #  Projeto de Realidade Aumentada
 
-Para a execução desse modelo, foram utilizados:
+Para a construção do modelo, foram utilizados:
 <p> 📌 Unity </p>
 <p> 📌 Vuforia </p>
 
