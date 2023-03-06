@@ -9,4 +9,4 @@
 #  Passo a passo
 No primeiro momento, deve-se fazer login e criar uma licença para registrar alvo do modelo. Em seguida, é preciso fazer a importação do banco de dados que será utilizando, sendo as features e targets.
 
-<img width="500px" height="500px" src="img/Target.png" align="center"/>
+<img src="Target.png" align="center"/>
