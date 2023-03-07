@@ -40,8 +40,8 @@ public class rotate : MonoBehaviour
     }
 }
 ```
-
-<p>📌 Para movimentá-los através do teclado</p>
+<i>Deve-se ainda configurar os eixos, nesse caso foram utilizados os seguintes valores: X = 50, Y = 50, Z = 50</i>
+<p>📌 Para movimentá-los através do teclado, para cima e para baixo (pulos)</p>
 
 ```javascript
 using System.Collections;
@@ -74,6 +74,27 @@ public class Teclado : MonoBehaviour
             transform.Translate(0.1f, 0f, -0.1f );
         }
 
+    }
+}
+```
+
+<p>📌 Para movimentar os cubos nas laterais</p>
+
+```javascript
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Movimento : MonoBehaviour
+{
+    public Vector3 rotateAmount;
+    void Start()
+    {
+        
+    }
+    void Update()
+    {
+        transform.Rotate(rotateAmount * Time.deltaTime);
     }
 }
 ```
