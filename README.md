@@ -11,9 +11,69 @@ No primeiro momento, deve-se fazer login e criar uma licença para registrar alv
 
 <img src="Target.png" align="center"/> <img src="targetmod.png" align="center"/>
 <p><i>Target utilizado  |  Mapeamento do target para projetar a realidade aumentada</i></p>
-
-Em seguida, deve-montar uma cena, nesse caso foi construída da seguinte forma:
+<hr>
+<p>Em seguida, deve-montar uma cena, nesse caso foi construída da seguinte forma:</p>
 <p>📌 Inclusão da imagem Target (alvo), a Câmera AR e o plano de fundo </p>
 
 <img src="licensekey.png" align="center"/>
+<hr>
 
+#  Scripts
+<p>📌 Para rotacionar os cubos</p>
+
+```javascript
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class rotate : MonoBehaviour
+{
+    public Vector3 rotateAmount;
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        transform.Rotate(rotateAmount * Time.deltaTime);
+    }
+}
+```
+
+<p>📌 Para rotacionar os cubos</p>
+
+```javascript
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Teclado : MonoBehaviour
+{
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        if(Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Translate(0.1f, 0f, 0f );
+        }
+        if(Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Translate(-0.1f, 0f, 0f );
+        }
+        if(Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(0f, 0f, 0.1f );
+        }
+        if(Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(0.1f, 0f, -0.1f );
+        }
+
+    }
+}
+```
