@@ -98,3 +98,6 @@ public class Movimento : MonoBehaviour
     }
 }
 ```
+
+<p>📌 Para remover a gravidade dos elementos, eles devem ser selecionados e desabilitar a opção "Use gravity"</p>
+<img src="gravidade.png" align="center"/>
