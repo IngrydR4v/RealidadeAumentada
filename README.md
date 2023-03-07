@@ -41,7 +41,7 @@ public class rotate : MonoBehaviour
 }
 ```
 
-<p>📌 Para rotacionar os cubos</p>
+<p>📌 Para movimentá-los através do teclado</p>
 
 ```javascript
 using System.Collections;
